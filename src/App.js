@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutPage from './pages/AboutPage/AboutPage';
+import MainPage from './pages/MainPage/MainPage';
 
 function App() {
+  const user = {name: "Anna", age: 19} 
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <AboutPage user={user} active="false"/>
+        <MainPage user={user} active="false"/>
     </div>
   );
 }
